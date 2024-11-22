@@ -1,4 +1,5 @@
-let  url_api=`${window.location.protocol}//${window.location.hostname}:8080/api/`;
+//let  url_api=`${window.location.protocol}//${window.location.hostname}:8080`;
+let  url_api=`https://inventario-api-atch.onrender.com`;
 
 function CrearRecursoApi(endpoint) {
     const url = `${url_api}${endpoint}`;
@@ -61,11 +62,11 @@ function CrearRecursoApi(endpoint) {
 }
 
 
-const articulos = CrearRecursoApi("articulos");
-const entradas = CrearRecursoApi("entradas");
-const salidas = CrearRecursoApi("salidas");
-const tipos_documento = CrearRecursoApi("tipos-documento");
-const unidades_medida = CrearRecursoApi("unidades-medida");
+const articulos = CrearRecursoApi("/api/articulos");
+const entradas = CrearRecursoApi("/api/entradas");
+const salidas = CrearRecursoApi("/api/salidas");
+const tipos_documento = CrearRecursoApi("/api/tipos-documento");
+const unidades_medida = CrearRecursoApi("/api/unidades-medida");
  
 
 
